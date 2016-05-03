@@ -26,7 +26,16 @@ AppDispatcher.register(function(payload){
     var action = payload.action;
 
     switch(action.actionType){
-
+		case AppConstants.ACTION_EXAMPLE:
+			console.log('Executing action example...');
+			
+			//App store modification
+			
+			//Api Call if needed
+			
+			//Emit changes
+			AppStore.emitChange();
+			break;
     }
 
     return true;
